@@ -1,0 +1,10 @@
+spring:
+   datasource:
+      username: truck_driving
+      password: truck_driving
+      url: jdbc:mysql://localhost:3306/truck_driving
+      
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true

@@ -1,0 +1,45 @@
+{
+  "companyName": "Biggie Smalls Transport",
+  "companyAddress": "444 S. Main St.",
+  "companyCity": "Idaho Falls",
+  "companyState": "Idaho",
+  "companyZip": "83402",
+  "companyPhone": "(208) 529-9725"  
+},
+
+{
+    "make" : "freightliner",
+    "model" : "Cascadia",
+    "plateNumber" : "1E4765"
+},
+
+{
+    "make" : "Peterbuilt",
+    "model" : "579",
+    "plateNumber" : "7KL4593"
+},
+{
+    "make" : "WesternStar",
+    "model" : "57X",
+    "plateNumber" : "2F3378"
+},
+
+{
+    "driverName" : "John Burgher",
+    "driverAddress" : "123 Main St",
+    "driverCity" : "Denver",
+    "driverState" : "Colorado",
+    "driverZip" : "34023",
+    "driverEmail" : "j.burgher@gmail.com",
+    "driverPhone" : "(343) 669-7480"
+},
+
+{
+    "driverName" : "John doe",
+    "driverAddress" : "123 South St",
+    "driverCity" : "Boise",
+    "driverState" : "Idaho",
+    "driverZip" : "85094",
+    "driverEmail" : "johndoe@gmail.com",
+    "driverPhone" : "(208) 289-4593"
+}
