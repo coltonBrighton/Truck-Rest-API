@@ -34,7 +34,7 @@ public class Drivers {
 	@ToString.Exclude
 	@ManyToMany(mappedBy = "drivers", cascade = CascadeType.ALL)
 	Set<Truck> trucks = new HashSet<>();
-	
+
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@ManyToOne

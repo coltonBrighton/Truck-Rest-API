@@ -22,21 +22,17 @@ public class Truck {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long truckId;
-	
+
 	private String make;
 	private String model;
 	private String plateNumber;
-	
+
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@ManyToMany(cascade = CascadeType.ALL)
-  @JoinTable(
-      name = "truck_driver",
-      joinColumns = @JoinColumn(name = "truck_id"),
-      inverseJoinColumns = @JoinColumn(name = "driver_id")
-  )
+	@JoinTable(name = "truck_driver", joinColumns = @JoinColumn(name = "truck_id"), inverseJoinColumns = @JoinColumn(name = "driver_id"))
 	private Set<Drivers> drivers = new HashSet<>();
-	
+
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@ManyToOne

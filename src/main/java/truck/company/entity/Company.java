@@ -16,24 +16,24 @@ import lombok.ToString;
 @Entity
 @Data
 public class Company {
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long companyId;
-  
-  private String name;
-  private String address;
-  private String city;
-  private String state;
-  private String zip;
-  private String phone;
-  
-  @EqualsAndHashCode.Exclude
-  @ToString.Exclude
-  @OneToMany(mappedBy = "company", cascade = CascadeType.ALL, orphanRemoval = true)
-  private Set<Drivers> drivers = new HashSet<>();
-  
-  @EqualsAndHashCode.Exclude
-  @ToString.Exclude
-  @OneToMany(mappedBy = "company", cascade = CascadeType.ALL, orphanRemoval = true)
-  private Set<Truck> trucks = new HashSet<>();
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long companyId;
+
+	private String name;
+	private String address;
+	private String city;
+	private String state;
+	private String zip;
+	private String phone;
+
+	@EqualsAndHashCode.Exclude
+	@ToString.Exclude
+	@OneToMany(mappedBy = "company", cascade = CascadeType.ALL, orphanRemoval = true)
+	private Set<Drivers> drivers = new HashSet<>();
+
+	@EqualsAndHashCode.Exclude
+	@ToString.Exclude
+	@OneToMany(mappedBy = "company", cascade = CascadeType.ALL, orphanRemoval = true)
+	private Set<Truck> trucks = new HashSet<>();
 }
